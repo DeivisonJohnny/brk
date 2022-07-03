@@ -32,12 +32,19 @@
 
         body {
             background-color: #42EEDC;
+            /* box-sizing: border-box; */
         }
 
         .logo {
             display: block;
             text-align: center;
             margin: 50px auto;
+        }
+
+        #tabela {
+            box-sizing: border-box;
+            /* width: 100vw; */
+            padding: 10px;
         }
 
 
@@ -82,16 +89,14 @@
             box-sizing: border-box;
             background-color: #31D697;
             font-weight: bold;
-            font-size: 19px;
+            font-size: 17px;
             transition: .3s;
 
         }
 
-        
-
         td, th {
             font-family: var(--font2);
-            padding: 10px;
+            padding: 1vw;
             border: 1px solid black;
             width: 110px;
 
@@ -136,84 +141,85 @@
 </head>
 <body>
     <div class="logo"><img src="https://www.brkambiental.com.br/themes/brk/assets/images/logo-brk.svg" alt="Logo-BRK"></div>
-    <table>
-        <caption>CDC's para roterização: BRK</caption>
-        <thead>
-            <tr>
-                <th id="cdc">CDC</th>
-                <th id="rota">ROTA</th>
-                <th id="grupo">GRUPO</th>
-                <th id="cdcv">CDC VIZINHO</th>
-                <th id="data">DATA</th> <!-- Data da leitura -->
-            </tr>
-        </thead>
-        <tbody>
-            <tr> <!--  linha -->
-                <td class="cdc">375038</td>  <!--  coluna -->
-                <td class="rota">002</td>
-                <td class="grupo">002</td>
-                <td class="cdcv">362346</td>
-                <td class="data">02/07/2022</td>
-            </tr>
-            <tr>
-                <td class="cdc">373727</td>
-                <td class="rota">001</td>
-                <td class="grupo">002</td>
-                <td class="cdcv">362259</td>
-                <td class="data">02/07/2022</td>
-            </tr>
-            <tr>
-                <td class="cdc">373590</td>
-                <td class="rota">002</td>
-                <td class="grupo">002</td>
-                <td class="cdcv">362585</td>
-                <td class="data">02/07/2022</td>
-            </tr>
-            <!-- <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr>
-            <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr>
-            <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr>
-            <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr>
-            <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr>
-            <tr>
-                <td class="cdc">CDC</td>
-                <td class="rota">rota</td>
-                <td class="grupo">grupo</td>
-                <td class="cdcv">CDC</td>
-                <td class="data">DATA</td>
-            </tr> -->
-
-        </tbody>
-</table>
+    <div id="tabela">
+        <table>
+            <caption>CDC's para roterização: BRK</caption>
+            <thead>
+                <tr>
+                    <th id="cdc">CDC</th>
+                    <th id="rota">ROTA</th>
+                    <th id="grupo">GRUPO</th>
+                    <th id="cdcv">CDC VIZINHO</th>
+                    <th id="data">DATA</th> <!-- Data da leitura -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!--  linha -->
+                    <td class="cdc">375038</td>  <!--  coluna -->
+                    <td class="rota">002</td>
+                    <td class="grupo">002</td>
+                    <td class="cdcv">362346</td>
+                    <td class="data">02/07/2022</td>
+                </tr>
+                <tr>
+                    <td class="cdc">373727</td>
+                    <td class="rota">001</td>
+                    <td class="grupo">002</td>
+                    <td class="cdcv">362259</td>
+                    <td class="data">02/07/2022</td>
+                </tr>
+                <tr>
+                    <td class="cdc">373590</td>
+                    <td class="rota">002</td>
+                    <td class="grupo">002</td>
+                    <td class="cdcv">362585</td>
+                    <td class="data">02/07/2022</td>
+                </tr>
+                <!-- <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr>
+                <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr>
+                <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr>
+                <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr>
+                <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr>
+                <tr>
+                    <td class="cdc">CDC</td>
+                    <td class="rota">rota</td>
+                    <td class="grupo">grupo</td>
+                    <td class="cdcv">CDC</td>
+                    <td class="data">DATA</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
 
 <section>
     <h2>
